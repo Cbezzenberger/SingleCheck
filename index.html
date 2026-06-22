@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Single Check</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card" id="entry-card">
+      <h1>Is <span class="placeholder">[...]</span> single?</h1>
+      <p>Enter the name of the person of interest.</p>
+      <form id="name-form">
+        <label for="name-input">Name</label>
+        <input id="name-input" name="name" type="text" autocomplete="off" required placeholder="Type a name..." />
+        <button type="submit">Check</button>
+      </form>
+    </section>
+    <section class="card result-card hidden" id="result-card" aria-live="polite">
+      <h1 id="result-text"></h1>
+      <p id="result-subtext">Your likelihood of dying alone has increased by 5%.</p>
+      <button id="restart-button" type="button">Check another name</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
